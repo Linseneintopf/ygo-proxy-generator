@@ -1,0 +1,48 @@
+\documentclass{scrartcl}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+
+% TODO: this might not be required
+%\usepackage{expl3}
+
+
+\geometry{
+    paper=a4paper,
+    left=10.5mm,
+    right=10.5mm,
+    top=16mm,
+    bottom=16mm
+}
+
+\pagenumbering{gobble}
+
+
+
+
+\newcommand{\vorlagenseite}{
+    \vorlage\vorlage\vorlage\\[-0.34mm]
+    \vorlage\vorlage\vorlage\\[-0.34mm]
+    \vorlage\vorlage\vorlage\\
+}
+
+\begin{document}
+    \centering
+
+    % Yu-Gi-Oh! card size: 59mm x 86mm
+
+    \includegraphics[width=59mm, height=86mm]{../images/Mystical_Space_Typhoon.png}
+    \includegraphics[width=59mm, height=86mm]{../images/Mystical_Space_Typhoon.png}
+    \includegraphics[width=59mm, height=86mm]{../images/Mystical_Space_Typhoon.png}
+    \\
+    \includegraphics[width=59mm, height=86mm]{../images/Solemn_Strike.png}
+    \includegraphics[width=59mm, height=86mm]{../images/Solemn_Strike.png}
+    \includegraphics[width=59mm, height=86mm]{../images/Solemn_Strike.png}
+    \\
+    \includegraphics[width=59mm, height=86mm]{../images/Effect_Veiler.png}
+    \includegraphics[width=59mm, height=86mm]{../images/Effect_Veiler.png}
+    \includegraphics[width=59mm, height=86mm]{../images/Effect_Veiler.png}
+
+\end{document}
