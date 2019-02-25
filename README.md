@@ -5,7 +5,9 @@
 **TODO: Write properly**
 
 - insert names of the required cards in `decklist.txt`
+    - make sure to spell all card names correctly
 - execute `make` on the command line
+- proxies.pdf einseitig drucken
 
 ## Troubleshooting
 
@@ -13,7 +15,8 @@
 
 ### Card image not found
 
--> download manually, place in `images/`
+1. make sure the card name is spelled correctly
+2. download manually, place in `images/`
 
 ### Resolution not good enough/card text illegible
 
