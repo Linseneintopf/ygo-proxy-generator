@@ -1,0 +1,12 @@
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+proxies.pdf
+
+# Visual Studio Code
+*.fdb_latexmk
+*.fls
+*.synctex.gz
