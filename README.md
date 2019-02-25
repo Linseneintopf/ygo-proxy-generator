@@ -2,7 +2,10 @@
 
 ## How to use
 
-**TODO**
+**TODO: Write properly**
+
+- insert names of the required cards in `decklist.txt`
+- execute `make` on the command line
 
 ## Troubleshooting
 
@@ -15,3 +18,11 @@
 ### Resolution not good enough/card text illegible
 
 -> download hi-res image manually, place in `images/`
+
+
+## Prerequisites
+
+- `pdflatex` for generating the pdf file
+- If the images for the cards in `decklist.txt` have not been downloaded yet:
+    - `curl` for downloading the images
+    - a working internet connection
