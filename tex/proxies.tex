@@ -11,10 +11,10 @@
 
 \geometry{
     paper=a4paper,
-    left=10.5mm,
-    right=10.5mm,
-    top=16mm,
-    bottom=16mm
+    left=16.5mm,
+    right=16.5mm,
+    top=19.48mm,
+    bottom=19.48mm
 }
 
 \pagenumbering{gobble}
@@ -22,27 +22,21 @@
 
 
 
-\newcommand{\vorlagenseite}{
-    \vorlage\vorlage\vorlage\\[-0.34mm]
-    \vorlage\vorlage\vorlage\\[-0.34mm]
-    \vorlage\vorlage\vorlage\\
-}
+\newcommand{\card}[1]{\includegraphics[width=59mm, height=86mm]{../images/#1.png}}
 
 \begin{document}
     \centering
 
-    % Yu-Gi-Oh! card size: 59mm x 86mm
-
-    \includegraphics[width=59mm, height=86mm]{../images/Mystical_Space_Typhoon.png}
-    \includegraphics[width=59mm, height=86mm]{../images/Mystical_Space_Typhoon.png}
-    \includegraphics[width=59mm, height=86mm]{../images/Mystical_Space_Typhoon.png}
-    \\
-    \includegraphics[width=59mm, height=86mm]{../images/Solemn_Strike.png}
-    \includegraphics[width=59mm, height=86mm]{../images/Solemn_Strike.png}
-    \includegraphics[width=59mm, height=86mm]{../images/Solemn_Strike.png}
-    \\
-    \includegraphics[width=59mm, height=86mm]{../images/Effect_Veiler.png}
-    \includegraphics[width=59mm, height=86mm]{../images/Effect_Veiler.png}
-    \includegraphics[width=59mm, height=86mm]{../images/Effect_Veiler.png}
+    \card{Mystical_Space_Typhoon}%
+    \card{Mystical_Space_Typhoon}%
+    \card{Mystical_Space_Typhoon}
+    \\[-0.34mm]
+    \card{Solemn_Strike}%
+    \card{Solemn_Strike}%
+    \card{Solemn_Strike}
+    \\[-0.34mm]
+    \card{Effect_Veiler}%
+    \card{Effect_Veiler}%
+    \card{Effect_Veiler}
 
 \end{document}
