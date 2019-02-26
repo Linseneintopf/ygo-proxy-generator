@@ -9,8 +9,11 @@ proxies.pdf: decklist.txt download-images
 
 .PHONY: download-images
 
-download-images: decklist.txt
-	# TODO
+download-images: decklist.txt scripts/download-images.sh
+	echo 'Downloading images'
+	./scripts/download-images.sh
+
+
 
 
 .PHONY: clean clean-tex clean-vscode
