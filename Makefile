@@ -1,11 +1,15 @@
 
 
+.SILENT:
+
 all: proxies.pdf
 
 proxies.pdf: decklist.txt download-images
+	echo 'Generating pdf'
 	# TODO: insert user's decklist
-	(cd tex; pdflatex proxies.tex)
+	(cd tex; pdflatex proxies.tex) > /dev/null
 	mv tex/proxies.pdf .
+	echo 'done'
 
 .PHONY: download-images
 
@@ -15,6 +19,9 @@ download-images: decklist.txt scripts/download-images.sh
 
 
 
+####################
+# Cleaning Targets #
+####################
 
 .PHONY: clean clean-tex clean-vscode
 
