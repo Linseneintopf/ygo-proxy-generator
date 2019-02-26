@@ -4,7 +4,7 @@
 
 all: proxies.pdf
 
-proxies.pdf: decklist.txt download-images
+proxies.pdf: download-images tex/cards.tex tex/proxies.tex
 	echo 'Generating pdf'
 	# TODO: insert user's decklist
 	(cd tex; pdflatex proxies.tex) > /dev/null
@@ -17,6 +17,9 @@ download-images: decklist.txt scripts/download-images.sh
 	echo 'Downloading images'
 	./scripts/download-images.sh
 
+tex/cards.tex: decklist.txt scripts/generate_cards_tex.sh
+	./scripts/generate_cards_tex.sh
+
 
 
 ####################
@@ -26,7 +29,7 @@ download-images: decklist.txt scripts/download-images.sh
 .PHONY: clean clean-tex clean-vscode
 
 clean: clean-tex clean-vscode
-	rm proxies.pdf || true
+	rm proxies.pdf tex/cards.tex || true
 
 clean-tex:
 	rm tex/proxies.{aux,bbl,blg,log,out,pdf} || true
