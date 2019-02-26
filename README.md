@@ -25,7 +25,14 @@
 
 ## Prerequisites
 
+This project was developed and tested on Linux, but there might be ways to get this to work on Windows.
+The follwing executables are required to use the project:
+
 - `pdflatex` for generating the pdf file
-- If the images for the cards in `decklist.txt` have not been downloaded yet:
-    - `curl` for downloading the images
-    - a working internet connection
+- `make` to execute Makefile targets
+
+These executables are also required, but should already be installed on most Linux systems:
+
+- `sh`, since some of the logic is implemented in a shell script
+    - `sed`, `xargs`: utilities used in the script
+- `curl` for downloading the images
