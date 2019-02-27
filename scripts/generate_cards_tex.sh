@@ -20,6 +20,8 @@ function generate_tex() {
 
         # skip empty lines
         [ -z "${card}" ] && continue
+        # skip comments (lines that start with '#')
+        [ "${card:0:1}" = '#' ] && continue
         # skip images that have already been downloaded
         [ -f "${image_path}/${card}.png" ] && continue
 
