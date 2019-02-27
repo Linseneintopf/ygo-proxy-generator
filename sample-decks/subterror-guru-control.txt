@@ -1,0 +1,106 @@
+##########################
+# Subterror Guru Control #
+##########################
+
+
+# An easy to play going-first deck that focuses on Subterror Guru to slowly generate advantage.
+# The small size of the engine allows for many hand traps, floodgates and other traps.
+# Created in February 2019.
+
+
+# Main deck
+############
+
+# Regular Monsters
+Subterror Behemoth Umastryx
+Subterror Guru
+Subterror Guru
+Subterror Guru
+
+# Hand Traps
+Ash Blossom & Joyous Spring
+Ash Blossom & Joyous Spring
+Ash Blossom & Joyous Spring
+Subterror Fiendess
+Subterror Fiendess
+Subterror Fiendess
+Effect Veiler
+Effect Veiler
+
+# Consistency Spells
+Pot of Extravagance
+Pot of Extravagance
+Pot of Extravagance
+Terraforming
+Terraforming
+Pot of Duality
+Pot of Duality
+Pot of Duality
+The Hidden City
+The Hidden City
+The Hidden City
+
+# Floodgates
+Summon Limit
+Summon Limit
+Summon Limit
+There Can Be Only One
+There Can Be Only One
+There Can Be Only One
+
+# Other Traps
+Infinite Impermanence
+Infinite Impermanence
+Infinite Impermanence
+Subterror Final Battle
+Subterror Final Battle
+Subterror Final Battle
+Solemn Strike
+Solemn Strike
+Solemn Strike
+Solemn Judgment
+Solemn Warning
+
+
+# Extra Deck
+#############
+
+# The extra deck is rarely used in this deck and is mostly there for Pot of Extravagance
+
+Shooting Quasar Dragon
+Borreload Dragon
+Borrelsword Dragon
+Saryuja Skull Dread
+Summon Sorceress
+Curious, the Lightsworn Dominion
+Decode Talker
+Knightmare Unicorn
+Knightmare Phoenix
+Knightmare Cerberus
+Missus Radiant
+Missus Radiant
+Missus Radiant
+Reprodocus
+Link Spider
+
+
+# Side Deck
+############
+
+# This side deck is probably not optimal...
+
+Subterror Nemesis Archer
+Subterror Nemesis Archer
+Ghost Ogre & Snow Rabbit
+Ghost Ogre & Snow Rabbit
+Scapegoat
+Subterror Cave Clash
+Necrovalley
+Necrovalley
+Necrovalley
+Heavy Storm Duster
+Heavy Storm Duster
+Heavy Storm Duster
+Gozen Match
+Gozen Match
+Gozen Match
