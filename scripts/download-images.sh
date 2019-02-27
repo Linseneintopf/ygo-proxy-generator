@@ -41,6 +41,12 @@ while read card; do
     # skip images that have already been downloaded
     [ -f "${image_path}/${card}.png" ] && continue
 
+    # remove all '#' from the card name because
+    # 1. LaTeX can't deal with it properly
+    # 2. the character is removed from Yu-Gi-Oh! fandom URLs
+    card="${card//#/}"
+
+
     download_image ${card}
     printf "."
 

@@ -25,6 +25,12 @@ function generate_tex() {
         # skip images that have already been downloaded
         [ -f "${image_path}/${card}.png" ] && continue
 
+        # remove all '#' from the card name because
+        # 1. LaTeX can't deal with it properly
+        # 2. the character is removed from Yu-Gi-Oh! fandom URLs
+        card="${card//#/}"
+
+
         # LaTeX code that inserts a card (% removes horizontal space between cards)
         echo "\card{${card}}%"
 
