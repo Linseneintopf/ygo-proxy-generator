@@ -29,11 +29,11 @@ tex/cards.tex: decklist.txt scripts/generate_cards_tex.sh
 .PHONY: clean clean-tex clean-vscode
 
 clean: clean-tex clean-vscode
-	rm proxies.pdf tex/cards.tex || true
+	rm proxies.pdf tex/cards.tex 2>/dev/null || true
 
 clean-tex:
-	rm tex/proxies.{aux,bbl,blg,log,out,pdf} || true
+	rm tex/proxies.{aux,bbl,blg,log,out,pdf} 2>/dev/null || true
 
 clean-vscode:
-	rm tex/proxies.{fdb_latexmk,fls,synctex.gz} || true
+	rm tex/proxies.{fdb_latexmk,fls,synctex.gz} 2>/dev/null || true
 
