@@ -14,6 +14,8 @@ function download_image() {
     url="${fandom_base_url}${card_name}"
     outfile="${image_path}/${card_name}.png"
 
+    # TODO: gracefully handle the case that a card cannot be found (e.g. if it is misspelled)
+
     # 1. look up the Yu-Gi-Oh! fandom page of the required card at ${url}
     # 2. from the returned HTML, extract the image from this line:
     #    <meta property="og:image" content="[image-url]" />

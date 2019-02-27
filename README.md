@@ -1,5 +1,8 @@
 # Yu-Gi-Oh! Proxy Generator
 
+**TODO: describe what this does**
+Card images are downloaded from `yugioh.fandom.com`, since their images easily accessible are usually of sufficient quality.
+
 ## How to use
 
 **TODO: Write properly**
