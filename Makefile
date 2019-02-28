@@ -12,11 +12,11 @@ proxies.pdf: download-images tex/cards.tex tex/proxies.tex
 
 .PHONY: download-images
 
-download-images: decklist.txt scripts/download-images.sh
+download-images: decklist.txt scripts/download_images.sh scripts/read_decklist.sh
 	echo 'Downloading images'
-	./scripts/download-images.sh
+	./scripts/download_images.sh
 
-tex/cards.tex: decklist.txt scripts/generate_cards_tex.sh
+tex/cards.tex: decklist.txt scripts/generate_cards_tex.sh scripts/read_decklist.sh
 	./scripts/generate_cards_tex.sh
 
 

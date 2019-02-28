@@ -1,5 +1,12 @@
 # Notes
 
+
+## Reading the decklist
+
+- the decklist is read through a function called `read_decklist`
+- it can be imported by sourcing the script `read_decklist.sh`
+
+
 ## Downloading card images
 
 - Retrieve this URL: `https://yugioh.fandom.com/wiki/[Card-Name]`

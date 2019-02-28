@@ -1,9 +1,14 @@
 #! /bin/sh
 
 
+# normalise current working directory
+cd "$(dirname ${0})"
+# import function read_decklist
+. ./read_decklist.sh
+
+
 readonly fandom_base_url='https://yugioh.fandom.com/wiki/'
 readonly image_path='../images'
-readonly deck_list_path='../decklist.txt'
 
 
 # Parameters:
@@ -13,6 +18,9 @@ function download_image() {
     card_name="${1}"
     url="${fandom_base_url}${card_name}"
     outfile="${image_path}/${card_name}.png"
+
+    # skip images that have already been downloaded
+    [ -f "${outfile}" ] && return 0
 
     # TODO: gracefully handle the case that a card cannot be found (e.g. if it is misspelled)
 
@@ -27,32 +35,11 @@ function download_image() {
 
 
 
-cd "$(dirname ${0})"
-
-
-while read card; do
-
-    # replace spaces with underscores in the card's name
-    # missing quotation marks remove leading and trailing whitespace
-    card=${card// /_}
-
-    # skip empty lines
-    [ -z "${card}" ] && continue
-    # skip comments (lines that start with '#')
-    [ "${card:0:1}" = '#' ] && continue
-    # skip images that have already been downloaded
-    [ -f "${image_path}/${card}.png" ] && continue
-
-    # remove all '#' from the card name because
-    # 1. LaTeX can't deal with it properly
-    # 2. the character is removed from Yu-Gi-Oh! fandom URLs
-    card="${card//#/}"
-
+read_decklist | while read card; do
 
     download_image ${card}
     printf "."
 
-done < "${deck_list_path}"
-
+done
 
 echo "done"

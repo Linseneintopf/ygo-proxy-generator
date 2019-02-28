@@ -3,33 +3,20 @@
 
 # this script generates LaTeX code that inserts the card images into the document
 
+
+# normalise current working directory
+cd "$(dirname ${0})"
+# import function read_decklist
+. ./read_decklist.sh
+
+
 readonly out_path='../tex/cards.tex'
-readonly deck_list_path='../decklist.txt'
 
 
 function generate_tex() {
     line_count=''
 
     while read card; do
-
-        # TODO: deduplicate code
-
-        # replace spaces with underscores in the card's name
-        # missing quotation marks remove leading and trailing whitespace
-        card=${card// /_}
-
-        # skip empty lines
-        [ -z "${card}" ] && continue
-        # skip comments (lines that start with '#')
-        [ "${card:0:1}" = '#' ] && continue
-        # skip images that have already been downloaded
-        [ -f "${image_path}/${card}.png" ] && continue
-
-        # remove all '#' from the card name because
-        # 1. LaTeX can't deal with it properly
-        # 2. the character is removed from Yu-Gi-Oh! fandom URLs
-        card="${card//#/}"
-
 
         # LaTeX code that inserts a card (% removes horizontal space between cards)
         echo "\card{${card}}%"
@@ -45,6 +32,4 @@ function generate_tex() {
 }
 
 
-cd "$(dirname ${0})"
-
-generate_tex > "${out_path}" < "${deck_list_path}"
+read_decklist | generate_tex > "${out_path}"
