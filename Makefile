@@ -6,7 +6,6 @@ all: proxies.pdf
 
 proxies.pdf: download-images tex/cards.tex tex/proxies.tex
 	echo 'Generating pdf'
-	# TODO: insert user's decklist
 	(cd tex; pdflatex proxies.tex) > /dev/null
 	mv tex/proxies.pdf .
 	echo 'done'
