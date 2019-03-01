@@ -22,7 +22,11 @@ function download_image() {
     # skip images that have already been downloaded
     [ -f "${outfile}" ] && return 0
 
-    # TODO: gracefully handle the case that a card cannot be found (e.g. if it is misspelled)
+    # check whether the card exists
+    if ! curl "${url}" --head --fail >/dev/null 2>&1; then
+        echo "Error: Could not find card \"${card}\"" >&2
+        return 1
+    fi
 
     # 1. look up the Yu-Gi-Oh! fandom page of the required card at ${url}
     # 2. from the returned HTML, extract the image from this line:

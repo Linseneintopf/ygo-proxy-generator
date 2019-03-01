@@ -17,7 +17,21 @@
 \pagenumbering{gobble}
 
 
-\newcommand{\card}[1]{\includegraphics[width=59mm, height=86mm]{../images/#1.png}}
+\newcommand{\card}[1]{%
+    \IfFileExists{../images/#1.png}{%
+        \includegraphics[width=59mm, height=86mm]{../images/#1.png}%
+    }{%
+        \includegraphics[width=59mm, height=86mm]{card-not-found.png}%
+        \llap{%
+            \raisebox{78mm}{%
+                \resizebox{49mm}{\height}{%
+                    \textsc{\detokenize{#1}}%
+                }%
+            }%
+            \hspace{5mm}%
+        }%
+    }%
+}
 
 \begin{document}
 
