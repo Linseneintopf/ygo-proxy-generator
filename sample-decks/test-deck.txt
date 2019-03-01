@@ -1,5 +1,12 @@
 # Test Deck
 
+
+Not A Card
+Nonexistent Card With an Exceptionally Long Name
+Not A (#&/$!) Card
+
+Luster Dragon #2
+
 Mystical Space Typhoon
 Mystical Space Typhoon
    Mystical Space Typhoon     
@@ -21,7 +28,5 @@ Mystical Space Typhoon
 Mystical Space Typhoon
 Mystical Space Typhoon
 Mystical Space Typhoon  
-
-Luster Dragon #2
 
 Sangan
