@@ -16,7 +16,8 @@ readonly image_path='../images'
 #    e.g. Mystical_Space_Typhoon
 function download_image() {
     card_name="${1}"
-    url="${fandom_base_url}${card_name}"
+    # urlencode question marks in the card's name
+    url="${fandom_base_url}$(echo "${card_name}" | sed 's/?/%3F/g')"
     outfile="${image_path}/${card_name}.png"
 
     # skip images that have already been downloaded
