@@ -1,0 +1,109 @@
+##########################
+# Subterror Guru Control #
+##########################
+
+
+# An easy to play going-first deck that focuses on Subterror Guru to slowly generate advantage.
+# The small size of the engine allows for many hand traps, floodgates and other traps.
+
+# Piloted by Can Tari at YCS Düsseldorf 1 (2019-02-23 and 24), reached top 8.
+# Source: http://www.youtube.com/watch?v=SNiZYcQ0JkI
+
+# Watch the coverage of YCS Düsseldorf 1 (2019) to see this deck in action:
+# https://www.youtube.com/watch?v=Xr-Au-f09rQ
+
+
+# Main deck
+############
+
+# Subterrors
+Subterror Guru
+Subterror Guru
+Subterror Guru
+Subterror Fiendess
+Subterror Fiendess
+Subterror Fiendess
+Subterror Behemoth Umastryx
+Subterror Nemesis Archer
+
+# Hand Traps
+Ghost Ogre & Snow Rabbit
+Ghost Ogre & Snow Rabbit
+Ghost Ogre & Snow Rabbit
+Ash Blossom & Joyous Spring
+Ash Blossom & Joyous Spring
+Ash Blossom & Joyous Spring
+Effect Veiler
+Effect Veiler
+Effect Veiler
+
+# Spells
+Pot of Extravagance
+Pot of Extravagance
+Pot of Extravagance
+Called by the Grave
+Called by the Grave
+Called by the Grave
+Terraforming
+Terraforming
+The Hidden City
+The Hidden City
+The Hidden City
+Pot of Duality
+Pot of Duality
+Super Polymerization
+
+# Traps
+Solemn Strike
+Solemn Strike
+Solemn Strike
+There Can Be Only One
+There Can Be Only One
+There Can Be Only One
+Subterror Final Battle
+Subterror Final Battle
+Subterror Final Battle
+
+ 
+# Extra Deck
+#############
+
+# Fusion Monsters (for Super Polymerization)
+# Most cards are included twice because of Pot of Extravagance
+Mudragon of the Swamp
+Mudragon of the Swamp
+Thunder Dragon Titan
+Thunder Dragon Titan
+Chimeratech Megafleet Dragon
+Chimeratech Fortress Dragon
+Prank-Kids Rocket Ride
+Prank-Kids Rocket Ride
+Predaplant Dragostapelia
+Predaplant Dragostapelia
+Salamangreat Violet Chimera
+Salamangreat Violet Chimera
+Starving Venom Fusion Dragon
+Starving Venom Fusion Dragon
+
+# Link Monster
+Linkuriboh
+
+
+# Side Deck
+############
+
+Artifact Lancea
+Artifact Lancea
+Artifact Lancea
+Droll & Lock Bird
+Droll & Lock Bird
+Droll & Lock Bird
+Dinowrestler Pankratops
+Dinowrestler Pankratops
+Dinowrestler Pankratops
+Evenly Matched
+Evenly Matched
+Evenly Matched
+Heavy Storm Duster
+Heavy Storm Duster
+Heavy Storm Duster
