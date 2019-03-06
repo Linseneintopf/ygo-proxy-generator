@@ -1,12 +1,21 @@
 # Test Deck
 
 
+# check whether nonexistent cards are handled correctly
+# these should show up as grey placeholders with the incorrect name inserted into the title bar
 Not A Card
 Nonexistent Card With an Exceptionally Long Name
 Not A (#&/$!) Card
 
+# check whether special characters in card names are handled correctly
+# hash symbol (#)
 Luster Dragon #2
+# question mark (?)
+Danger!? Tsuchinoko?
+# period (.)
+D.D.R. - Different Dimension Reincarnation
 
+# Check whether additional whitespace is handled correctly
 Mystical Space Typhoon
 Mystical Space Typhoon
    Mystical Space Typhoon     
@@ -21,12 +30,3 @@ Effect Veiler
 Call of the Haunted
 Call of the Haunted
      
-
-Mystical Space Typhoon
-Mystical Space Typhoon
-Mystical Space Typhoon     
-Mystical Space Typhoon
-Mystical Space Typhoon
-Mystical Space Typhoon  
-
-Sangan
