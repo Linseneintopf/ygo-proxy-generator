@@ -1,0 +1,143 @@
+##############################
+# Dark Warrior Danger Orcust #
+##############################
+
+
+# An explosive going-first deck that attempts to summon Azathot on the opponent's turn.
+
+# Piloted by Dinh-Kha Bui at YCS Düsseldorf 1 (2019-02-23 and 24), reached 3rd place.
+# Source: https://www.youtube.com/watch?v=0wpsC5fZLpc
+
+# Watch the coverage of YCS Düsseldorf 1 (2019) to see this deck in action:
+# https://www.youtube.com/watch?v=R5HXcHPWDrc
+# https://www.youtube.com/watch?v=YmQh9C0BziE
+
+
+# Main deck
+############
+
+# 60 cards!
+
+# Dangers
+Danger! Mothman!
+Danger! Mothman!
+Danger!? Tsuchinoko?
+Danger!? Tsuchinoko?
+Danger!? Tsuchinoko?
+Danger!? Jackalope?
+Danger!? Jackalope?
+Danger!? Jackalope?
+Danger! Nessie!
+Danger! Nessie!
+Danger! Nessie!
+Danger! Chupacabra!
+Danger! Bigfoot!
+Danger! Thunderbird!
+
+# Orcust
+World Legacy - "World Wand"
+#World Legacy - World Wand
+Orcust Cymbal Skeleton
+Orcust Harp Horror
+Orcust Knightmare
+Orcust Knightmare
+
+# Warriors
+Vision HERO Vyon
+Vision HERO Vyon
+Vision HERO Vyon
+Neo Space Connector
+Neo Space Connector
+Neo Space Connector
+Neo-Spacian Aqua Dolphin
+Neo-Spacian Aqua Dolphin
+Neo-Spacian Aqua Dolphin
+Junk Forward
+Junk Forward
+Junk Forward
+Destiny HERO - Malicious
+Destiny HERO - Malicious
+Photon Thrasher
+Dark Grepher
+Armageddon Knight
+
+# Phantom Knights (for Rusty Bardiche)
+The Phantom Knights of Ancient Cloak
+The Phantom Knights of Silent Boots
+
+# Blackwings (combo with Summon Sorceress, Curious and Gryphon to search Eradicator Epidemic Virus)
+Blackwing - Steam the Cloak
+Blackwing - Zephyros the Elite
+
+Destrudo the Lost Dragon's Frisson
+Destrudo the Lost Dragon's Frisson
+Destrudo the Lost Dragon's Frisson
+Mare Mare
+
+# Spells
+Called by the Grave
+Called by the Grave
+Called by the Grave
+Monster Reborn
+Reinforcement of the Army
+Foolish Burial
+Orcustrated Babel
+The Phantom Knights' Rank-Up-Magic Launch
+
+# Equip spells for Isolde
+Axe of Fools
+D.D.R. - Different Dimension Reincarnation
+Noble Arms - Arfeudutyr
+Living Fossil
+Divine Sword - Phoenix Blade
+
+# Traps
+The Phantom Knights of Shade Brigandine
+Phantom Knights' Fog Blade
+Eradicator Epidemic Virus
+
+
+# Extra Deck
+#############
+
+# Link Monsters
+Knightmare Mermaid
+Knightmare Cerberus
+Knightmare Phoenix
+Knightmare Unicorn
+Isolde, Two Tales of the Noble Knights
+Galatea, the Orcust Automaton
+The Phantom Knights of Rusty Bardiche
+Summon Sorceress
+Curious, the Lightsworn Dominion
+# Longirsu is the main target for Eradicator Epidemic Virus
+Longirsu, the Orcust Orchestrator
+Knightmare Gryphon
+Borrelsword Dragon
+
+# XYZ Monsters
+Time Thief Redoer
+Outer Entity Azathot
+
+# Synchro Monster
+Yazi, Evil of the Yang Zing
+
+
+# Side Deck
+############
+
+Dinowrestler Pankratops
+Dinowrestler Pankratops
+Dinowrestler Pankratops
+Radian, the Multidimensional Kaiju
+Radian, the Multidimensional Kaiju
+Radian, the Multidimensional Kaiju
+D.D. Crow
+D.D. Crow
+D.D. Crow
+Fantastical Dragon Phantazmay
+Fantastical Dragon Phantazmay
+Fantastical Dragon Phantazmay
+Twin Twisters
+Twin Twisters
+Twin Twisters
