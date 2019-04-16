@@ -19,7 +19,7 @@
 
 \newcommand{\card}[1]{%
     \IfFileExists{../images/#1.png}{%
-        \includegraphics[width=59mm, height=86mm]{../images/#1.png}%
+        \includegraphics[width=59mm, height=86mm]{../images/{{#1}}}%
     }{%
         \includegraphics[width=59mm, height=86mm]{card-not-found.png}%
         \llap{%

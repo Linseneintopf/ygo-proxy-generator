@@ -68,3 +68,10 @@ The new card image will be used for all further deck lists as well.
 
 If this happens, please open an issue and I will try to fix it as soon as i have time.
 Please include all information required to recreate the problem, most importantly your `decklist.txt`.
+
+
+## Known Bugs
+
+- Cards with quote characters (`"`) in their names are always displayed as placeholders
+    - Reason: this character is used to disable special characters in file names, so the \IfFileExists macro looks for the wrong file
+    - Workaround: After the image has been downloaded, remove the quote character(s) from both the image file name and the card's name in the decklist. Then restart generating the PDF file.

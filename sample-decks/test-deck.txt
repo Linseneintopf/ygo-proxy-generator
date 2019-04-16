@@ -14,6 +14,8 @@ Luster Dragon #2
 Danger!? Tsuchinoko?
 # period (.)
 D.D.R. - Different Dimension Reincarnation
+# quotes (")
+World Legacy - "World Wand"
 
 # Check whether additional whitespace is handled correctly
 Mystical Space Typhoon
