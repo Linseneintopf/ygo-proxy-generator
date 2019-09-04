@@ -33,9 +33,12 @@ function download_image() {
     # 2. from the returned HTML, extract the image from this line:
     #    <meta property="og:image" content="[image-url]" />
     # 3. download the image from that url and save it at ${outfile}
-    curl "${url}" 2>/dev/null \
-        | sed -n 's/^\s*<meta property="og:image" content="\(.*\)" \/>$/\1/p' \
-        | xargs curl 2>/dev/null > "${outfile}"
+
+    og_image=$(curl "${url}" 2>/dev/null \
+        | grep "og:image")
+
+    image_url=$(echo $og_image | cut -d '"' -f4)
+    curl $image_url 2>/dev/null >> $outfile
 }
 
 
