@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 
 # this script generates LaTeX code that inserts the card images into the document
