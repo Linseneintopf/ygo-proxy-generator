@@ -32,4 +32,4 @@ function generate_tex() {
 }
 
 
-read_decklist | generate_tex > "${out_path}"
+read_decklist | sed "s/\"/\'/g" | generate_tex > "${out_path}"
