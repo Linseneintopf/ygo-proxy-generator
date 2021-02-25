@@ -34,12 +34,13 @@ This project was developed and tested on Linux, but there might be ways to get t
 The follwing executables are required to use the project:
 
 - `pdflatex` for generating the pdf file
+    - `KOMA-Script` must be available
 - `make` to execute Makefile targets
 
 These executables are also required, but should already be installed on most Linux systems:
 
 - `curl` for downloading the images
-- `sh`, since some of the logic is implemented in shell scripts
+- `bash` (version 4+), since some of the logic is implemented in shell scripts
     - `sed`, `xargs`: utilities used in the scripts
 
 
@@ -51,7 +52,7 @@ If a card could not be found on `yugioh.fandom.com`, an error message will be pr
 If this happens, please make sure that the card's name is spelled correctly, so the scripts can find the appropriate page on the Yu-Gi-Oh! fandom website.
 If the script cannot find the page regardless or if no such page exists, download an image of the card manually and place it in the `images/` folder.
 Make sure the image is cropped exactly to the edges of the card, otherwise the proxy will not have the correct size or not look like the actual card.
-Name the image file like the name of the card, but replace whitespaces with underscores (`_`) and remove all hash symbols (`#`) if there are any.
+Name the image file like the name of the card, but replace whitespaces with underscores (`_`) and remove all hash symbols (`#`) and dollar signs (`$`) if there are any.
 Use the `.png` file extension, even if the image uses another format (like JPG).
 Then retry generating the PDF file.
 
@@ -59,7 +60,7 @@ Then retry generating the PDF file.
 
 The card images on the Yu-Gi-Oh! fandom website are usually of high enough quality for the card text to be legible.
 If this is not the case, find a higher-res image of that card online (or create one yourself) and and replace the original image in the `images/` folder.
-It is named like the card itself, but with underscores (`_`) instead of whitespaces and no hash symbols (`#`).
+It is named like the card itself, but with underscores (`_`) instead of whitespaces, single quotes (`'`) instead of double quotes (`"`), and no hash symbols (`#`) or dollar signs (`$`).
 Make sure the new image file also uses the `.png` file extension, even if the image uses another format (like JPG).
 Re-generate the PDF file to apply the changes.
 The new card image will be used for all further deck lists as well.
@@ -68,10 +69,3 @@ The new card image will be used for all further deck lists as well.
 
 If this happens, please open an issue and I will try to fix it as soon as i have time.
 Please include all information required to recreate the problem, most importantly your `decklist.txt`.
-
-
-## Known Bugs
-
-- Cards with quote characters (`"`) in their names are always displayed as placeholders
-    - Reason: this character is used to disable special characters in file names, so the \IfFileExists macro looks for the wrong file
-    - Workaround: After the image has been downloaded, remove the quote character(s) from both the image file name and the card's name in the decklist. Then restart generating the PDF file.
