@@ -17,7 +17,7 @@ readonly image_path='../images'
 function download_image() {
     card_name="${1}"
     # urlencode question marks in the card's name
-    url="${fandom_base_url}$(echo "${card_name}" | sed 's/?/%3F/g')"
+    url="${fandom_base_url}$(echo "${card_name}" | sed -e 's/?/%3F/g' -e 's/&/%26/g')"
     outfile="${image_path}/${card_name}.png"
 
     # skip images that have already been downloaded
@@ -34,7 +34,7 @@ function download_image() {
     #    <meta property="og:image" content="[image-url]" />
     # 3. download the image from that url and save it at ${outfile}
     curl "${url}" 2>/dev/null \
-        | sed -n 's/^\s*<meta property="og:image" content="\(.*\)" \?\/>$/\1/p' \
+        | sed -n 's|^\s*<meta property="og:image" content="\(.*\)" \?/>$|\1|p' \
         | xargs curl 2>/dev/null > "${outfile}"
 }
 
