@@ -34,7 +34,7 @@ function download_image() {
     #    <meta property="og:image" content="[image-url]" />
     # 3. download the image from that url and save it at ${outfile}
     curl "${url}" 2>/dev/null \
-        | sed -n 's/^\s*<meta property="og:image" content="\(.*\)" \/>$/\1/p' \
+        | sed -n 's/^\s*<meta property="og:image" content="\(.*\)" \?\/>$/\1/p' \
         | xargs curl 2>/dev/null > "${outfile}"
 }
 
