@@ -26,6 +26,11 @@ function read_decklist() {
         # 2. the character is removed from Yu-Gi-Oh! fandom URLs
         card="${card//#/}"
 
+        # remove all '$' from the card name because
+        # 1. LaTeX interprets it weirdly and throws a warning
+        # 2. the character does not seem to exist in Yu-Gi-Oh! card names
+        card="${card//$/}"
+
         echo "${card}"
 
     done < "${deck_list_path}"
