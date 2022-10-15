@@ -18,6 +18,9 @@ function generate_tex() {
 
     while read card; do
 
+        # replace double quotes (") with single quotes (')
+        card="$(echo "${card}" | sed "s/\"/\'/g")"
+
         # LaTeX code that inserts a card (% removes horizontal space between cards)
         echo "\card{${card}}%"
 
@@ -32,4 +35,4 @@ function generate_tex() {
 }
 
 
-read_decklist | sed "s/\"/\'/g" | generate_tex > "${out_path}"
+read_decklist | generate_tex > "${out_path}"
