@@ -7,7 +7,7 @@ readonly deck_list_path='../decklist.txt'
 
 
 # reads the decklist at ${deck_list_path} and pre-processes it
-# outputs a list of card names, separated by newlines
+# outputs a list of card names or card passcodes, separated by newlines
 function read_decklist() {
 
     while read card; do
@@ -20,6 +20,11 @@ function read_decklist() {
         [ -z "${card}" ] && continue
         # skip comments (lines that start with '#')
         [ "${card:0:1}" = '#' ] && continue
+        # skip lines that are '!side'
+        # these appear in .ydk files and indicate the start of the side deck
+        [ "${card}" = '!side' ] && continue
+        # the main and extra deck indicators in .ydk files are '#main' and
+        # '#extra', so they don't need to be handled separately
 
         # remove all '#' from the card name because
         # 1. LaTeX can't deal with it properly
