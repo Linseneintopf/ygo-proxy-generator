@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 
 # normalise current working directory
@@ -17,8 +17,9 @@ readonly image_path='../images'
 function download_image() {
     card_name="${1}"
     # urlencode question marks in the card's name
-    url="${fandom_base_url}$(echo "${card_name}" | sed 's/?/%3F/g')"
-    outfile="${image_path}/${card_name}.png"
+    url="${fandom_base_url}$(echo "${card_name}" | sed -e 's/?/%3F/g' -e 's/&/%26/g')"
+    # change double quotes in the card's name to single quotes
+    outfile="${image_path}/${card_name//\"/\'}.png"
 
     # skip images that have already been downloaded
     [ -f "${outfile}" ] && return 0
@@ -34,8 +35,15 @@ function download_image() {
     #    <meta property="og:image" content="[image-url]" />
     # 3. download the image from that url and save it at ${outfile}
     curl "${url}" 2>/dev/null \
-        | sed -n 's/^\s*<meta property="og:image" content="\(.*\)" \/>$/\1/p' \
+        | sed -n 's|^\s*<meta property="og:image" content="\(.*\)" \?/>$|\1|p' \
         | xargs curl 2>/dev/null > "${outfile}"
+
+    # check whether the image exists
+    if [ ! -s "${outfile}" ]; then
+        rm -f "${outfile}"
+        echo "Error: Could not download card \"${card}\"" >&2
+        return 1
+    fi
 }
 
 
