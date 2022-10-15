@@ -30,9 +30,8 @@ function read_decklist() {
         # 1. LaTeX interprets it weirdly and throws a warning
         # 2. the character does not seem to exist in Yu-Gi-Oh! card names
         card="${card//$/}"
-        
-        # ensure the first letter is capitalized
-        echo "${card^}"
+
+        echo "${card}"
 
     done < "${deck_list_path}"
 }
