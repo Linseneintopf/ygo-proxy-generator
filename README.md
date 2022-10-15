@@ -67,5 +67,5 @@ The new card image will be used for all further deck lists as well.
 
 ### The program crashes, hangs or does not produce a PDF file
 
-If this happens, please open an issue and I will try to fix it as soon as i have time.
+If this happens, please open an issue and I will try to fix it ~as soon as i have time~ years later when I remember that this repo exists (sorry).
 Please include all information required to recreate the problem, most importantly your `decklist.txt`.
