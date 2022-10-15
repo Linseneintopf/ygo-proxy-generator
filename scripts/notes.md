@@ -10,9 +10,11 @@
 ## Downloading card images
 
 - Retrieve this URL: `https://yugioh.fandom.com/wiki/[Card-Name]`
-    - `[Card-Name]` is the name of the card
+    - `[Card-Name]` is the name of the card or its [passcode](https://yugioh.fandom.com/wiki/Passcode)
+        - The passcode is the eight-digit number printed in the bottom left corner of each card
     - Use underscores (`_`) instead of spaces
-    - pay attention to correct capitalisation
+    - Remove hash symbols (`#`) and dollar signs (`$`)
+    - Pay attention to correct capitalisation
 - find this line in the HTML file:
 ```HTML
     <meta property="og:image" content="[image-url]" />
